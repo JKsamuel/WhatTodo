@@ -1,0 +1,2 @@
+# whatTodo
+JavaScript Fianl assignment
