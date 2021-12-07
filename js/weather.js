@@ -25,8 +25,8 @@ function handleGeoError() {
     iconSelect.setAttribute("src", "icons/unknown.png")
     Weather__description.innerText = `???`;
     weather__temperature.innerText = "-℃"
-    Weather__location.innerText = "지구 어딘가";
-    Weather__humidity.innerText = "위치모름"
+    Weather__location.innerText = "Some where";
+    Weather__humidity.innerText = "I have no idea"
 }
 
 function getGeolocation() {
@@ -80,4 +80,4 @@ function loadCoord() {
     }
 }
 
-WeatherShowing.addEventListener("click", loadCoord);
+loadCoord()

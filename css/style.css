@@ -11,7 +11,6 @@ body {
     padding: 0;
     font-weight: 900;
     font-family: 'Raleway', sans-serif;
-    overflow: hidden;
     transform-style: preserve-3d;
     -ms-user-select: none;
     -webkit-user-select: none;
@@ -31,10 +30,18 @@ input[type='radio']:checked+section {
 .container {
     display: grid;
     grid-template-columns: auto auto;
+    grid-gap: 10px;
     width: 100%;
     height: 50vh;
     transition: all 500ms;
     transform-style: preserve-3d;
+}
+
+.container section h1 {
+    margin: 10px;
+    font-size: 4vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .container section.home {
@@ -45,6 +52,7 @@ input[type='radio']:checked+section {
 
 .container section.ToDo {
     background: #f7b731;
+    padding-bottom: 30px;
 }
 
 .container section.weather {

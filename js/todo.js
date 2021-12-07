@@ -25,13 +25,13 @@ if (data) {
     id = 0;
 }
 
-// clear LS
+// clear the List
 clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 })
 
-// load items ti the interface
+// load items on the interface
 function loadList(array) {
     array.forEach(function (item) {
         addToDo(item.name, item.id, item.done, item.trash)
@@ -74,14 +74,9 @@ function handleSubmit(event) {
         // if input isn't empty
         if (toDo) {
             addToDo(toDo, id, false, false);
-            List.push({
-                name: toDo,
-                id: id,
-                done: false,
-                trash: false
-            })
+            List.push({name: toDo, id: id, done: false,trash: false})
 
-            // add item to LS
+            // add item to the List
             localStorage.setItem("TODO", JSON.stringify(List));
 
             id++;

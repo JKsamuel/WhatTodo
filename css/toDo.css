@@ -1,15 +1,15 @@
 .toDo {
     width: 30vw;
-    height: 68vh;
+    height: 70vh;
     position: relative;
     transform-style: preserve-3d;
     left: 50%;
-    top: 0.5vh;
+    top: 0vh;
     border-radius: 3%;
     transform: translateX(-50%);
     overflow: hidden;
     outline: 5px solid rgba(255, 255, 255, 0.85);
-    animation: toDoAppear ease-in-out 1s forwards;
+    animation: toDoAppear ease-in-out 2s forwards;
     visibility: hidden;
 }
 
@@ -18,18 +18,19 @@
     position: absolute;
     top: 0px;
     width: 100%;
-    line-height: 25px;
+    line-height: 40px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.85);
 }
 
 
 .toDo__date {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.85);
-    margin-left: 15px;
+    margin-left: 30px;
     text-align: center;
     position: relative;
+    top: 5px;
     bottom: 5px;
 }
 
@@ -82,7 +83,7 @@
     font-size: 1.8vw;
     --ionicon-stroke-width: 50px;
     margin-left: 1vw;
-    margin-bottom: 1vh;
+    margin-bottom: 0vh;
 }
 
 .list-icon[name="radio-button-on-outline"] {
@@ -105,7 +106,7 @@
 
 .toDo-del {
     font-size: 1.8vw;
-    margin-bottom: 1vh;
+    margin-bottom: 0vh;
 }
 
 .toDo-del:hover {
@@ -118,24 +119,24 @@
     bottom: 0px;
     width: 100%;
     border-top: 1px solid rgba(255, 255, 255, 0.85);
-    line-height: 30px;
+    line-height: 50px;
 }
 
 .toDo__add-icon {
     position: absolute;
     font-size: 35px;
     margin-left: 10px;
-    bottom: 10px;
+    bottom: 5px;
 }
 
 .toDo__input {
     border: 0px;
     background-color: #f7b731;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: 900;
     color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     left: 50px;
     position: relative;
 }
@@ -144,7 +145,7 @@
     color: rgba(255, 255, 255, 0.85);
     font-weight: 900;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
 }
 
 .toDo__input:focus {
