@@ -1,8 +1,8 @@
 <?php
 
-//error_reporting(E_ALL);
+error_reporting(E_ALL);
 
-//ini_set("display_errors", 1);
+ini_set("display_errors", 1);
 
 include "connect.php";
 date_default_timezone_set("America/New_York");
@@ -17,3 +17,8 @@ $sql = "INSERT into users (username, email, userpassword, datetime) VALUES (?, ?
 $stmt = $dbh->prepare($sql);
 $params = [$username, $userid, $password, $datetime];
 $success = $stmt->execute($params);
+
+if($success){
+    echo "<script>alert('Thank you for registration');</script>";
+    echo "<script>document.location.href='../index.html';</script>";
+}
