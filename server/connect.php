@@ -1,4 +1,11 @@
 <?php
+/**
+ * Title: conncect.php
+ * Author: Jongeun Kim
+ * Number: 000826393
+ * Date: Dec 9, 2021
+ * Purpose: Connect to Local Database(phpmyadmin)
+ */
 
 try{
     $dbh = new PDO(

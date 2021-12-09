@@ -60,8 +60,8 @@ input[type='radio']:checked+section {
     background: #20bf6b;
 }
 
-.container section.contact {
-    background: #eb3b5a;
+.container section.Game {
+    background: #000000;
 }
 
 .btn__logout{
